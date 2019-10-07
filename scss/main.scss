@@ -1,0 +1,252 @@
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: "Bookman Old Style"; // Segoe UI, Tahoma, Geneva, Verdana, sans-serif  // Castellar //Baskerville Old Face
+  font-style: italic;
+  line-height: 1;
+  align-items: center;
+  text-align: center;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 500;
+  hr {
+    height: 1px;
+    color: white;
+    background: white;
+  }
+
+  &.lg-heading {
+    font-style: normal;
+    color: white;
+    font-size: 3.5rem;
+    text-align: left;
+    width: 75vh; // FIx
+    background: rgba(lighten($primary-color, 2), 0.65);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  &.small-heading {
+    color: white; // Force white on telefon och öppettider
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  //height: 100%;
+  min-height: calc(100vh - 60px);
+
+  .social-icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .icons {
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  &#home {
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+  &#about {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+    .lg-heading {
+      width: 50vh;
+    }
+  }
+  &#work {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+    .lg-heading {
+      width: 50vh;
+    }
+  }
+  &#contact {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+    .lg-heading {
+      width: 50vh;
+    }
+  }
+  &#food {
+    overflow: hidden;
+    h1 {
+      margin-top: 5vh;
+    }
+    span {
+      color: white;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    .small-heading {
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0rem;
+    }
+  }
+}
+
+/* ABOUT page */
+.about-info {
+  p {
+    color: white;
+  }
+  h6 {
+    color: white;
+  }
+  h3 {
+    color: $third-color;
+  }
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bio bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+
+  .job-2 {
+    grid-area: job2;
+  }
+
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $third-color 5px solid;
+  }
+}
+
+// Work/Projects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+  img {
+    display: block;
+    width: 100%;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include zoomIn;
+      @include easeOut;
+    }
+  }
+  .img-box {
+    overflow: hidden;
+    margin-top: 2rem;
+    border: 3px #fff solid;
+    &:hover {
+      border-color: $secondary-color;
+    }
+  }
+  .item {
+    p {
+      color: white;
+    }
+    &:hover {
+      p {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// Contact
+#contact {
+  .sm-heading {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@import "mobile";
