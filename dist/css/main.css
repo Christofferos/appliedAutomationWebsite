@@ -206,7 +206,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.6); }
   body#bg-img-about {
-    background: url(../images/omoss.png) no-repeat 50% 50%;
+    background: url(../images/homepage3.png) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
@@ -220,7 +220,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.6); }
   body#bg-img-work {
-    background: url(../images/work.png) no-repeat 50% 50%;
+    background: url(../images/homepage3.png) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
@@ -234,7 +234,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.6); }
   body#bg-img-contact {
-    background: url(../images/contact.png) no-repeat 50% 50%;
+    background: url(../images/homepage3.png) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
