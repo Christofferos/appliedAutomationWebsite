@@ -24,7 +24,6 @@
       margin-bottom: 0rem;
     }
   }
-
   .menu-btn {
     display: none;
   }
@@ -53,17 +52,23 @@
   .menu-desktop {
     display: none;
   }
+
   main {
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
       margin-top: 0.5rem;
       width: 100%;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .small-heading {
       margin-bottom: 2rem;
       padding: 0.2rem 1rem;
+    }
+    span {
+      &.text-secondary {
+        font-size: 1.1rem;
+      }
     }
   }
 

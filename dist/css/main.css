@@ -17,7 +17,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #0073a8;
+    background: white;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -207,6 +207,7 @@ body {
     background: url(../images/homepage2.png) no-repeat 50% 50%;
     background-attachment: absolute;
     background-size: cover;
+    background-position: 20% 60%;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
     body#bg-img:after {
       content: "";
@@ -275,7 +276,7 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     color: white;
-    font-size: 6vh;
+    font-size: 5.8vh;
     text-align: left;
     width: 75vh;
     background: rgba(22, 45, 78, 0.65);
@@ -294,7 +295,7 @@ hr {
 
 span.text-secondary {
   color: white;
-  font-size: 2.5vh; }
+  font-size: 3vh; }
 
 a {
   color: #fff;
@@ -311,13 +312,9 @@ header {
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
-  main .social-icons {
-    margin-top: 1rem; }
-    main .social-icons a {
-      padding: 0.4rem; }
-      main .social-icons a:hover {
-        color: #ff6600;
-        transition: all 0.5s ease-out; }
+  main a:hover {
+    color: #ff6600;
+    transition: all 0.5s ease-out; }
   main .icons a {
     padding: 0.4rem; }
     main .icons a:hover {
@@ -389,12 +386,12 @@ main {
   font-size: 2.5rem;
   margin-top: 2rem; }
 
-.btn, .btn-dark, .btn-light {
+.btn, .btn-dark, .btn-light, .btn-onDisplay {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  .btn:hover, .btn-dark:hover, .btn-light:hover {
+  .btn:hover, .btn-dark:hover, .btn-light:hover, .btn-onDisplay:hover {
     background: #ff6600;
     color: #000; }
 
@@ -405,6 +402,13 @@ main {
 .btn-light {
   background: #7fa3da;
   color: #333; }
+
+.btn-onDisplay {
+  border-radius: 2rem;
+  width: 15.5rem;
+  font-weight: 1000;
+  background: #152a4a;
+  color: white; }
 
 #main-footer {
   text-align: center;
@@ -449,10 +453,12 @@ main {
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     width: 100%;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   main .small-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
+  main span.text-secondary {
+    font-size: 1.1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;

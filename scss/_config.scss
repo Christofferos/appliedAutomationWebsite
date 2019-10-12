@@ -27,6 +27,7 @@ $background-opacity2: 0.75;
       background: $home-image no-repeat 50% 50%;
       background-attachment: absolute; // fixed will zoom in but avoid having grey at bottom
       background-size: cover;
+      background-position: 20% 60%;
 
       /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/
       &:after {
