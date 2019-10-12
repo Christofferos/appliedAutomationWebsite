@@ -6,16 +6,6 @@
   background: white;
   transition: all 0.5s ease-out; }
 
-.menu-call {
-  position: absolute;
-  z-index: 3;
-  left: 40px;
-  top: 32px;
-  width: 28px;
-  height: 24px;
-  cursor: pointer;
-  transition: all 0.5s ease-out; }
-
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -70,6 +60,8 @@
   width: 100%;
   opacity: 0.9;
   visibility: hidden; }
+  .menu a {
+    color: white; }
   .menu.show {
     visibility: visible; }
   .menu-nav {
@@ -178,6 +170,26 @@
 #logo {
   font-weight: bold; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: bold;
+  font-style: normal;
+  color: #0073a8;
+  text-decoration: none;
+  transition: all 0.5s ease-out; }
+  .nav-link:hover {
+    color: #ff6600; }
+
+#logo {
+  font-weight: bold; }
+
 * {
   box-sizing: border-box; }
 
@@ -187,13 +199,13 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Bookman Old Style";
-  font-style: italic;
+  font-style: normal;
   line-height: 1;
   align-items: center;
   text-align: center; }
   body#bg-img {
     background: url(../images/homepage2.png) no-repeat 50% 50%;
-    background-attachment: fixed;
+    background-attachment: absolute;
     background-size: cover;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
     body#bg-img:after {
@@ -218,7 +230,7 @@ body {
       width: 100%;
       height: 100vh;
       z-index: -1;
-      background: rgba(20, 40, 70, 0.6); }
+      background: rgba(20, 40, 70, 0.75); }
   body#bg-img-work {
     background: url(../images/homepage3.png) no-repeat 50% 50%;
     background-size: cover;
@@ -232,7 +244,7 @@ body {
       width: 100%;
       height: 100vh;
       z-index: -1;
-      background: rgba(20, 40, 70, 0.6); }
+      background: rgba(20, 40, 70, 0.75); }
   body#bg-img-contact {
     background: url(../images/homepage3.png) no-repeat 50% 50%;
     background-size: cover;
@@ -246,7 +258,7 @@ body {
       width: 100%;
       height: 100vh;
       z-index: -1;
-      background: rgba(20, 40, 70, 0.6); }
+      background: rgba(20, 40, 70, 0.75); }
 
 h1,
 h2,
@@ -262,9 +274,8 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-style: normal;
     color: white;
-    font-size: 3.5rem;
+    font-size: 6vh;
     text-align: left;
     width: 75vh;
     background: rgba(22, 45, 78, 0.65);
@@ -278,17 +289,24 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(22, 45, 78, 0.5); }
 
+hr {
+  margin-bottom: 0rem; }
+
+span.text-secondary {
+  color: white;
+  font-size: 2.5vh; }
+
 a {
   color: #fff;
   text-decoration: none; }
+
+#logo {
+  font-style: italic; }
 
 header {
   position: fixed;
   z-index: 2;
   width: 100%; }
-
-.text-secondary {
-  color: #ff6600; }
 
 main {
   padding: 4rem;
@@ -305,42 +323,22 @@ main {
     main .icons a:hover {
       color: #ff6600;
       transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
-  main#about {
-    overflow: hidden; }
-    main#about h1 {
-      margin-top: 5vh; }
-    main#about .lg-heading {
-      width: 50vh; }
-  main#work {
-    overflow: hidden; }
-    main#work h1 {
-      margin-top: 5vh; }
-    main#work .lg-heading {
-      width: 50vh; }
-  main#contact {
-    overflow: hidden; }
-    main#contact h1 {
-      margin-top: 5vh; }
-    main#contact .lg-heading {
-      width: 50vh; }
-  main#food {
-    overflow: hidden; }
-    main#food h1 {
-      margin-top: 5vh; }
-    main#food span {
-      color: white; }
-    main#food ul {
-      padding: 0; }
-    main#food li {
-      list-style: none; }
-    main#food .small-heading {
-      font-weight: 600;
-      margin-top: 1.5rem;
-      margin-bottom: 0rem; }
+  main h1 {
+    margin-top: 5vh; }
+  main#about .lg-heading {
+    width: 50vh; }
+  main#work .lg-heading {
+    width: 50vh; }
+  main#work h3 {
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 1.5rem; }
+  main#contact .lg-heading {
+    width: 50vh; }
+  main#contact h3 {
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 1.5rem; }
 
 /* ABOUT page */
 .about-info {
@@ -353,7 +351,8 @@ main {
   .about-info h6 {
     color: white; }
   .about-info h3 {
-    color: #2676c0; }
+    color: white;
+    padding: 2rem 1rem; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -378,28 +377,34 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
   .projects img {
-    display: block;
-    width: 100%; }
+    width: 100%;
+    border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #ff6600;
-      transform: scale(1.15);
       transition: all 0.5s ease-out; }
-  .projects .img-box {
-    overflow: hidden;
-    margin-top: 2rem;
-    border: 3px #fff solid; }
-    .projects .img-box:hover {
-      border-color: #ff6600; }
-  .projects .item p {
-    color: white; }
-  .projects .item:hover p {
-    color: #ff6600; }
 
 #contact .sm-heading {
   font-weight: 600;
   font-size: 2.5rem;
   margin-top: 2rem; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #ff6600;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #7fa3da;
+  color: #333; }
 
 #main-footer {
   text-align: center;
@@ -409,6 +414,20 @@ main {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
+  #home h1 {
+    margin-top: 20vh; }
+  #food h1 {
+    margin-top: 5vh; }
+  #food span {
+    color: white; }
+  #food ul {
+    padding: 0; }
+  #food li {
+    list-style: none; }
+  #food .small-heading {
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem; }
   .menu-btn {
     display: none; }
   .projects {
@@ -418,14 +437,19 @@ main {
   .menu-btn {
     display: none; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .menu-desktop .nav-item {
+    padding: 0rem 1rem; } }
 
 @media screen and (max-width: 768px) {
   .menu-desktop {
     display: none; }
   main .lg-heading {
     line-height: 1;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: 2rem; }
   main .small-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem; }
@@ -448,9 +472,7 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 2vh;
-    font-size: 3rem; }
+  overflow: hidden;
   main#home .small-heading {
     margin-bottom: 1rem; }
   main#home .social-icons {
