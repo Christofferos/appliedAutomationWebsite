@@ -1,5 +1,30 @@
 // Widescreens
 @include mediaXl {
+  &#home {
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+  &#food {
+    h1 {
+      margin-top: 5vh;
+    }
+    span {
+      color: white;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    .small-heading {
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0rem;
+    }
+  }
+
   .menu-btn {
     display: none;
   }
@@ -16,6 +41,11 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  .menu-desktop {
+    .nav-item {
+      padding: 0rem 1rem;
+    }
+  }
 }
 
 // Tablets / Small Laptops
@@ -27,6 +57,9 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
+      margin-top: 0.5rem;
+      width: 100%;
+      font-size: 2rem;
     }
     .small-heading {
       margin-bottom: 2rem;
@@ -68,11 +101,8 @@
 
 // Smartphones
 @include mediaSm {
+  overflow: hidden;
   main#home {
-    h1 {
-      margin-top: 2vh;
-      font-size: 3rem;
-    }
     .small-heading {
       margin-bottom: 1rem;
     }
