@@ -47,7 +47,7 @@
   .menu-desktop-nav {
     margin: 0;
     padding: 0;
-    background: #0f1f36;
+    background: #586f90;
     list-style: none; }
   .menu-desktop .nav-item {
     padding: 0 2rem; }
@@ -96,8 +96,8 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 18px;
-  /* 15px */
+  font-size: 1.25vw;
+  /* 15px 18px*/
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: bold;
@@ -117,8 +117,8 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 18px;
-  /* 15px */
+  font-size: 1.25vw;
+  /* 15px 18px*/
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: bold;
@@ -138,8 +138,8 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 18px;
-  /* 15px */
+  font-size: 1.25vw;
+  /* 15px 18px*/
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: bold;
@@ -159,8 +159,8 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 18px;
-  /* 15px */
+  font-size: 1.25vw;
+  /* 15px 18px*/
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: bold;
@@ -180,8 +180,8 @@
 .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 18px;
-  /* 15px */
+  font-size: 1.25vw;
+  /* 15px 18px*/
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: bold;
