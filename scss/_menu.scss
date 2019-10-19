@@ -74,7 +74,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 4);
+    background: darken($menu-color, 6); // Computer Menu
     list-style: none;
   }
 
@@ -152,7 +152,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 18px; /* 15px */
+    font-size: 1.25vw; /* 15px 18px*/
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: bold;
