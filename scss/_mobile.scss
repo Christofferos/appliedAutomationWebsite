@@ -52,7 +52,11 @@
   .menu-desktop {
     display: none;
   }
-
+  @for $x from 1 through 5 {
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
   main {
     .lg-heading {
       line-height: 1;
@@ -107,6 +111,7 @@
 // Smartphones
 @include mediaSm {
   overflow: hidden;
+
   main#home {
     .small-heading {
       margin-bottom: 1rem;
