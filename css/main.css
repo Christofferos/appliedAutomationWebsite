@@ -28,6 +28,11 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(6.5px, -6px); }
 
+.menu-logo-mobile {
+  position: absolute;
+  top: 14px;
+  left: 12%; }
+
 .menu-desktop {
   position: fixed;
   top: 0;
@@ -453,6 +458,16 @@ main {
 @media screen and (max-width: 768px) {
   .menu-desktop {
     display: none; }
+  .nav-link {
+    font-size: 1rem; }
+  .nav-link {
+    font-size: 1rem; }
+  .nav-link {
+    font-size: 1rem; }
+  .nav-link {
+    font-size: 1rem; }
+  .nav-link {
+    font-size: 1rem; }
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
