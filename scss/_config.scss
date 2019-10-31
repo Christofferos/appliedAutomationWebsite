@@ -1,5 +1,5 @@
 $primary-color: rgb(20, 40, 70); // #444 // rgb(31, 31, 31)
-$menu-color: rgb(102, 126, 161);
+$menu-color: rgb(20, 40, 70); // Pappa gillar den här färgen: rgb(102, 126, 161)
 $secondary-color: rgb(255, 102, 0); //eece1a //rgb(207, 83, 0)
 $third-color: rgb(38, 118, 192); // rgb(38, 118, 192)
 $white-color: rgb(255, 255, 255);
@@ -7,10 +7,10 @@ $show-home-image: true;
 $show-about-image: true;
 $show-work-image: true;
 $show-contact-image: true;
-$home-image: url(../images/homepage2.png);
-$about-image: url(../images/homepage3.png);
-$work-image: url(../images/homepage3.png);
-$contact-image: url(../images/homepage3.png);
+$home-image: url(../images/frontPage.jpg); //homepage2.png
+$about-image: url(../images/secondPage.jpg); //homepage3.png
+$work-image: url(../images/secondPage.jpg);
+$contact-image: url(../images/secondPage.jpg);
 $background-opacity: 0.6;
 $background-opacity2: 0.75;
 

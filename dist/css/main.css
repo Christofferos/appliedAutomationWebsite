@@ -52,7 +52,7 @@
   .menu-desktop-nav {
     margin: 0;
     padding: 0;
-    background: #586f90;
+    background: #142846;
     list-style: none; }
   .menu-desktop .nav-item {
     padding: 0 2rem; }
@@ -214,7 +214,7 @@ body {
   align-items: center;
   text-align: center; }
   body#bg-img {
-    background: url(../images/homepage2.png) no-repeat 50% 50%;
+    background: url(../images/frontPage.jpg) no-repeat 50% 50%;
     background-attachment: absolute;
     background-size: cover;
     background-position: 20% 60%;
@@ -229,7 +229,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.6); }
   body#bg-img-about {
-    background: url(../images/homepage3.png) no-repeat 50% 50%;
+    background: url(../images/secondPage.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
@@ -243,7 +243,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.75); }
   body#bg-img-work {
-    background: url(../images/homepage3.png) no-repeat 50% 50%;
+    background: url(../images/secondPage.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }
@@ -257,7 +257,7 @@ body {
       z-index: -1;
       background: rgba(20, 40, 70, 0.75); }
   body#bg-img-contact {
-    background: url(../images/homepage3.png) no-repeat 50% 50%;
+    background: url(../images/secondPage.jpg) no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     /* Sudo-element - puts in something that is not in the HTML - This is the overlay*/ }

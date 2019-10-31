@@ -80,7 +80,10 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($menu-color, 6); // Computer Menu
+    background: darken(
+      $menu-color,
+      0
+    ); // Computer Menu //Pappa gillar darken(..., 6);
     list-style: none;
   }
 
@@ -123,7 +126,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 5); // Mobile menu selection
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;

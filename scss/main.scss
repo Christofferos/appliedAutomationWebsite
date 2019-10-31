@@ -36,7 +36,10 @@ h3 {
     font-size: 5.8vh; //3.5rem //
     text-align: left;
     width: 75vh; // FIx
-    background: rgba(lighten($primary-color, 2), 0.65);
+    background: rgba(
+      lighten($primary-color, 2),
+      0.65
+    ); //Light up the lg-background color
     padding: 1rem;
     border-radius: 0.5rem;
   }
